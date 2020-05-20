@@ -31,7 +31,6 @@ counter :: Eq a => [a] -> a -> Int
 counter (x:[]) y = if x == y then 1 else 0 
 counter (x:xs) y = if x == y then 1 + counter xs y else 0 
 
-
 --problem 14
 dupli :: [a] -> [a]
 dupli [] = []
